@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SONM Services</title>
+    <link rel="stylesheet" href="./css/index.pcss" />
+  </head>
+
+  <body>
+    <div class="body_wrapper">
+      <include src="./blocks/header.html"></include>
+
+      <div class="content_wrapper content_wrapper_task content_wrapper_payment">
+        <div class="control_side control_side_profile_settings">
+          <div class="profile_navigation">
+            <a href="profile_settings.html">Profile settings</a>
+            <a href="contact_details.html">Contact details</a>
+            <a class="profile_navigation_active" href="payment_method.html"
+              >Payment method</a
+            >
+            <a href="balance.html">Balance</a>
+            <div class="profile_navigation_devider"></div>
+            <a href="#">Pricing</a>
+          </div>
+        </div>
+
+        <div class="content_side content_side-payments">
+          <div class="payment-types">
+            <div class="page_title">Default payment method</div>
+            <div class="plain_text plain_text-payment">
+              All transactions are secure and encrypted.
+            </div>
+            <div class="payment_types_wrapper">
+              <label class="radio">
+                <span class="radio-in">
+                  <input
+                    type="radio"
+                    name="payment_type"
+                    value="credit cart"
+                    class="radio-input"
+                    checked
+                  />
+                  <span class="radio-fake"></span>
+                </span>
+                <div class="radio-payment">
+                  <div class="radio-payment-img_wrapper">
+                    <img src="./images/logo_credit.png" alt="" />
+                  </div>
+                  <p class="radio-payment-text">
+                    <span class="radio-payment-title">Credit Card</span><br />
+                    **** 1390
+                  </p>
+                </div>
+              </label>
+
+              <label class="radio">
+                <span class="radio-in">
+                  <input
+                    type="radio"
+                    name="payment_type"
+                    value="paypal"
+                    class="radio-input"
+                  />
+                  <span class="radio-fake"></span>
+                </span>
+                <div class="radio-payment">
+                  <div class="radio-payment-img_wrapper">
+                    <img src="./images/logo_paypal.png" alt="" />
+                  </div>
+                  <p class="radio-payment-text">
+                    <span class="radio-payment-title">CPaypal</span><br />
+                    mail@mail.com
+                  </p>
+                </div>
+              </label>
+
+              <label class="radio">
+                <span class="radio-in">
+                  <input
+                    type="radio"
+                    name="payment_type"
+                    value="wire transfer"
+                    class="radio-input"
+                  />
+                  <span class="radio-fake"></span>
+                </span>
+                <div class="radio-payment">
+                  <div class="radio-payment-img_wrapper">
+                    <img src="./images/logo_bank.png" alt="" />
+                  </div>
+                  <p class="radio-payment-text">
+                    <span class="radio-payment-title">Wire transfer</span>
+                  </p>
+                </div>
+              </label>
+
+              <label class="radio">
+                <span class="radio-in">
+                  <input
+                    type="radio"
+                    name="payment_type"
+                    value="bitcoin"
+                    class="radio-input"
+                  />
+                  <span class="radio-fake"></span>
+                </span>
+                <div class="radio-payment">
+                  <div class="radio-payment-img_wrapper">
+                    <img src="./images/logo_btc.png" alt="" />
+                  </div>
+                  <p class="radio-payment-text">
+                    <span class="radio-payment-title">Bitcoin</span><br />
+                    add wallet
+                  </p>
+                </div>
+              </label>
+
+              <label class="radio">
+                <span class="radio-in">
+                  <input
+                    type="radio"
+                    name="payment_type"
+                    value="Ethereum"
+                    class="radio-input"
+                  />
+                  <span class="radio-fake"></span>
+                </span>
+                <div class="radio-payment">
+                  <div class="radio-payment-img_wrapper">
+                    <img src="./images/logo_eth.png" alt="" />
+                  </div>
+                  <p class="radio-payment-text">
+                    <span class="radio-payment-title">Ethereum</span><br />
+                    add wallet
+                  </p>
+                </div>
+              </label>
+
+              <label class="radio">
+                <span class="radio-in">
+                  <input
+                    type="radio"
+                    name="payment_type"
+                    value="sonm"
+                    class="radio-input"
+                  />
+                  <span class="radio-fake"></span>
+                </span>
+                <div class="radio-payment">
+                  <div class="radio-payment-img_wrapper">
+                    <img src="./images/logo_sonm.png" alt="" />
+                  </div>
+                  <p class="radio-payment-text">
+                    <span class="radio-payment-title">SONM</span><br />
+                    add wallet
+                  </p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="payment_type_details">
+            <div class="page_title">Credit Card details</div>
+            <div class="contact_textfield textfield_100">
+              <div class="contact_textfield-title">Card number</div>
+              <input type="text" class="input contact_textfield-input" />
+            </div>
+            <div class="contact_textfield textfield_50">
+              <div class="contact_textfield-title">Cardholder name</div>
+              <input type="text" class="input contact_textfield-input" />
+            </div>
+            <div class="contact_textfield textfield_25">
+              <div class="contact_textfield-title">MM/YY</div>
+              <input type="text" class="input contact_textfield-input" />
+            </div>
+            <div class="contact_textfield textfield_15">
+              <div class="contact_textfield-title">CVC</div>
+              <input
+                type="password"
+                maxlength="4"
+                class="input contact_textfield-input"
+              />
+            </div>
+
+            <button class="button_solid button_solid_contact_save">
+              Save Changes
+            </button>
+
+            <button class="button_icon_white button_icon_white_delete">
+              Delete card
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

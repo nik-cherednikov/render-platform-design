@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SONM Services</title>
+    <link rel="stylesheet" href="./css/index.pcss" />
+  </head>
+
+  <body>
+    <div class="body_wrapper">
+      <include src="./blocks/header.html"></include>
+
+      <div class="content_wrapper content_wrapper_task">
+        <div class="control_side control_side_profile_settings">
+          <div class="profile_navigation">
+            <a href="profile_settings.html">Profile settings</a>
+            <a href="contact_details.html">Contact details</a>
+            <a href="payment_method.html">Payment method</a>
+            <a class="profile_navigation_active" href="balance.html">Balance</a>
+            <div class="profile_navigation_devider"></div>
+            <a href="#">Pricing</a>
+          </div>
+        </div>
+
+        <div class="content_side">
+          <div class="content_header">
+            <div class="page_title">Balance: $101,4</div>
+            <button
+              data-popup="add_funds"
+              class="button_solid newtask popup-on"
+            >
+              Пополнить счет
+            </button>
+          </div>
+          <div class="balance_dropdown_wrapper">
+            <select class="input contact_textfield-input">
+              <option value="All_time">All time</option>
+              <option value="today">Today</option>
+              <option value="Yesterday">Yesterday</option>
+              <option value="7d">7 days</option>
+              <option value="30d">30 days</option>
+              <option value="90d">90 days</option>
+            </select>
+
+            <select class="input contact_textfield-input">
+              <option value="All_types">All types</option>
+              <option value="cc">Credit Card</option>
+              <option value="paypal">Wire transfer</option>
+              <option value="bts">Bitcoin</option>
+              <option value="eth">Ethereum</option>
+              <option value="sonm">SONM</option>
+            </select>
+          </div>
+          <table cellspacing="0" cellspadding="0">
+            <thead>
+              <tr class="table_header">
+                <th>Transaction date</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Download</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2018/10/01 00:15:09</td>
+                <td>Bitcoin</td>
+                <td>0.0000001 BTC (14 USD)</td>
+                <td><a href="#">Receipt</a></td>
+              </tr>
+              <tr>
+                <td>2018/10/01 00:15:09</td>
+                <td>Paypal</td>
+                <td>14 USD</td>
+                <td><a href="#">Receipt</a></td>
+              </tr>
+
+              <tr class="table_total">
+                <td colspan="4">
+                  За это время выбранным способом было оплачено: $28
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="popup add_funds">
+      <button
+        type="button"
+        class="popup_close popup_close_x"
+        title="Close popup"
+        aria-label="Close popup"
+      ></button>
+      <div class="popup_title">Пополнение счета</div>
+
+      <div class="popup-payment_wrapper">
+        <div class="popup-payment">
+          <div class="popup-payment-img_wrapper">
+            <img src="./images/logo_credit.png" alt="" />
+          </div>
+          <p class="radio-payment-text">
+            <span class="radio-payment-title">Credit Card</span><br />
+            **** 1390
+          </p>
+        </div>
+        <a href="#">Другой способ</a>
+      </div>
+
+      <label class="contact_textfield textfield_100">
+        <span class="contact_textfield-title">Amount</span>
+        <input type="text" class="input contact_textfield-input" />
+      </label>
+
+      <div class="popup_buttons">
+        <button class="button_text popup_close">CANCEL</button>
+        <button class="button_solid button_solid_start">пополнить</button>
+      </div>
+    </div>
+
+    <div class="popup_background"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SONM Services</title>
+    <link rel="stylesheet" href="./css/index.pcss" />
+  </head>
+
+  <body>
+    <div class="body_wrapper">
+      <include src="./blocks/header.html"></include>
+
+      <div class="content_wrapper content_wrapper_task">
+        <div class="control_side">
+          <a href="list.html" class="link link_back">BACK</a>
+
+          <div class="progress">
+            <div class="progress_percent">56%</div>
+            <div class="progress_status inprogress">In progress</div>
+            <div class="progress_line"></div>
+            <div class="progress_fe task_item">10/139 frames</div>
+            <div class="progress_fe task_item">ETA: 14h, 11m</div>
+          </div>
+
+          <div class="priority">
+            <div class="priority_title">
+              Приоритет <span class="priority_info">?</span>
+            </div>
+
+            <ul class="priority_item">
+              <li class="priority_item_active">Promo</li>
+              <li>Standart</li>
+              <li>Vip</li>
+            </ul>
+          </div>
+
+          <div class="settings">
+            <div class="settings_item task_item">
+              Размер кадров: <span class="settings_item_text">1920 x 1080</span>
+            </div>
+            <div class="settings_item task_item">
+              Формат: <span class="settings_item_text">EXIF</span>
+            </div>
+            <!--             <button class="button_icon button_icon_settings">
+              Change settings
+            </button> -->
+            <button class="button_icon button_icon_delete">
+              Delete task and frames
+            </button>
+          </div>
+        </div>
+
+        <div class="content_side">
+          <div class="content_header">
+            <div class="task_title content_title">Cool movie</div>
+            <div class="content_pay">Будет потрачено: ~$4.56</div>
+          </div>
+
+          <div class="frames_control">
+            <select
+              name="SceneCamera"
+              class="select-shadow select-shadow-frames"
+            >
+              <option value="1">❯❯❯ Scene – Camera</option>
+              <option value="2">Scene – Camera1</option>
+              <option value="3">❯❯❯ Scene – Camera2</option>
+              <option value="4">Scene – Camera3</option>
+            </select>
+
+            <div class="frames_to_render">
+              <div class="frames_to_render_title">
+                Frames to render:
+                <a href="#" data-popup="frames_select" class="popup-on">
+                  1, 2, 5, 130-154
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="view_control">
+            <div class="frames_filter">
+              <div class="frames_filter_item frames_filter_item_active">
+                all frames <span class="frames_filter_item_counter">146</span>
+              </div>
+
+              <div class="frames_filter_item">
+                rendered only <span class="frames_filter_item_counter">10</span>
+              </div>
+            </div>
+
+            <div class="view_switch">
+              <div
+                class="view_switcher view_switcher_small view_switcher_active"
+              ></div>
+              <div class="view_switcher view_switcher_big"></div>
+            </div>
+
+            <button class="button_icon button_icon_download">
+              Dowload all rendered frames by zip
+            </button>
+          </div>
+
+          <div class="frames_field">
+            <div class="center">
+              <div class="container">
+                <div class="grid">
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+
+                  <div class="grid-item-frame"><span>31</span></div>
+
+                  <div class="grid-item-frame"><span>31</span></div>
+
+                  <div class="grid-item-frame"><span>31</span></div>
+
+                  <div class="grid-item-frame grid-item-rendering">
+                    <span>31</span>
+                    <div class="grid-item-rendering_spinner"></div>
+                  </div>
+
+                  <div class="grid-item-frame"><span>31</span></div>
+
+                  <div class="grid-item-frame"><span>31</span></div>
+
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+
+                  <div class="grid-item-frame"><span>31</span></div>
+
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+
+                  <div class="grid-item-frame"><span>31</span></div>
+
+                  <div class="grid-item-frame"><span>31</span></div>
+
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+
+                  <div class="grid-item-frame"><span>31</span></div>
+
+                  <div class="grid-item-frame"><span>31</span></div>
+
+                  <div class="grid-item-frame"><span>31</span></div>
+
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://via.placeholder.com/150x190"
+                    target="_blank"
+                    class="grid-item-rendered grid-item-frame"
+                  >
+                    <div
+                      class="grid-item__image"
+                      style="background-image:url('./images/rendered_frame.png');"
+                    >
+                      <img src="./images/rendered_frame.png" alt="" />
+                      <div class="grid-item__number"><p>31</p></div>
+                    </div>
+                  </a>
+                  <div class="grid-item-frame"><span>31</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup frames_select">
+      <button
+        type="button"
+        class="popup_close popup_close_x"
+        title="Close popup"
+        aria-label="Close popup"
+      ></button>
+      <div class="popup_title">Frames to render</div>
+      <div>Total frames: 14 234 <a href="#">select all</a></div>
+      <input
+        type="text"
+        class="input popup_input_100"
+        value="1, 2, 5, 130-154"
+      />
+      <div class="popup_hint">28 frames selected</div>
+
+      <div class="popup_buttons">
+        <button class="button_text popup_close">CANCEL</button>
+        <button class="button_solid button_solid_start">ACCEPT</button>
+      </div>
+    </div>
+    <div class="popup_background"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

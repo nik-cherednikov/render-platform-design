@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "cssnano": "^4.1.8",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.5.0",
+    "posthtml-expressions": "^1.1.0",
+    "posthtml-include": "^1.2.0"
+  },
+  "dependencies": {
+    "index.js": "0.0.3",
+    "normalize": "^0.3.1"
+  }
+}

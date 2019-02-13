@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SONM Services</title>
+    <link rel="stylesheet" href="./css/index.pcss" />
+  </head>
+
+  <body>
+    <div class="body_wrapper">
+      <div class="hamburger"></div>
+      <div class="menu">
+        <a href="list.html" class="logo"></a>
+        <a href="list.html" class="site_name">Render farm</a>
+        <a href="list.html" class="menu_item">Tasks</a>
+        <a href="billing.html" class="menu_item menu_item_active">Billing</a>
+        <div class="user">
+          <div class="userpic"></div>
+          <div class="company_name">Companyname</div>
+          <div class="acc_balance">$101,4</div>
+          <div class="drop_arrow"></div>
+          <div class="user_menu">
+            <a href="profile_settings.html">Profile settings</a>
+            <a href="contact_details.html">Contact details</a>
+            <a href="payment_method.html">Payment method</a>
+            <a href="balance.html">Balance</a> <a href="#">Pricing</a>
+            <a class="user_menu-logout" href="#">Log out</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_wrapper content_wrapper_task">
+        <div class="control_side control_side_billing">
+          <div class="select-shadow-wrapper">
+            <div class="select-shadow-title">year</div>
+            <select class="select-shadow select-shadow-control_side">
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option selected value="2018">2018</option>
+            </select>
+          </div>
+
+          <div class="select-shadow-wrapper">
+            <div class="select-shadow-title">Month</div>
+            <select class="select-shadow">
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option selected value="December">December</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="content_side">
+          <div class="content_header">
+            <div class="page_title">Billing</div>
+            <button class="button_solid newtask">Export csv</button>
+          </div>
+          <table cellspacing="0" cellspadding="0">
+            <thead>
+              <tr class="table_header">
+                <th>File</th>
+                <th>Frames</th>
+                <th>GPU/hours</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Venom</td>
+                <td>14 001</td>
+                <td>14.6</td>
+                <td>$415.25</td>
+              </tr>
+              <tr>
+                <td>Cool movie</td>
+                <td>3</td>
+                <td>0.3</td>
+                <td>$0.95</td>
+              </tr>
+              <tr>
+                <td>Best summer ever 3</td>
+                <td>62</td>
+                <td>3</td>
+                <td>$11.53</td>
+              </tr>
+              <tr class="table_total">
+                <td>Total</td>
+                <td>14 066</td>
+                <td>17.9</td>
+                <td>$427,73</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

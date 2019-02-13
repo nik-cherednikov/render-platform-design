@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <circle id="userpic-a" cx="12" cy="12" r="12"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="userpic-b" fill="#fff">
+      <use xlink:href="#userpic-a"/>
+    </mask>
+    <use fill="#0064EB" fill-rule="nonzero" xlink:href="#userpic-a"/>
+    <path stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M21,23 C21,19.6862915 16.2604824,16 12,16 C7.73951764,16 3,19.6862915 3,23" mask="url(#userpic-b)"/>
+    <circle cx="12" cy="9" r="4" stroke="#FFF" stroke-width="2" mask="url(#userpic-b)"/>
+  </g>
+</svg>

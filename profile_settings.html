@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SONM Services</title>
+    <link rel="stylesheet" href="./css/index.pcss" />
+  </head>
+
+  <body>
+    <div class="body_wrapper">
+      <div class="hamburger"></div>
+      <div class="menu">
+        <a href="list.html" class="logo"></a>
+        <a href="list.html" class="site_name">Render farm</a>
+        <a href="list.html" class="menu_item">Tasks</a>
+        <a href="billing.html" class="menu_item">Billing</a>
+        <div class="user">
+          <div class="userpic"></div>
+          <div class="company_name">Companyname</div>
+          <div class="acc_balance">$101,4</div>
+          <div class="drop_arrow"></div>
+          <div class="user_menu">
+            <a href="profile_settings.html">Profile settings</a>
+            <a href="contact_details.html">Contact details</a>
+            <a href="payment_method.html">Payment method</a>
+            <a href="balance.html">Balance</a> <a href="#">Pricing</a>
+            <a class="user_menu-logout" href="#">Log out</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_wrapper content_wrapper_task">
+        <div class="control_side control_side_profile_settings">
+          <div class="profile_navigation">
+            <a class="profile_navigation_active" href="profile_settings.html"
+              >Profile settings</a
+            >
+            <a href="contact_details.html">Contact details</a>
+            <a href="payment_method.html">Payment method</a>
+            <a href="balance.html">Balance</a>
+            <div class="profile_navigation_devider"></div>
+            <a href="#">Pricing</a>
+          </div>
+        </div>
+
+        <div class="content_side">
+          <div class="page_title">Profile Settings</div>
+
+          <div class="settings_section">
+            <div class="settings_section_title">Email</div>
+            <div class="settings_section_text">mail@mail.com</div>
+            <button data-popup="email_change" class="popup-on button_solid">
+              Change Email
+            </button>
+          </div>
+
+          <div class="settings_section_devider"></div>
+
+          <div class="settings_section">
+            <div class="settings_section_title">Password</div>
+            <button data-popup="password_change" class="popup-on button_solid">
+              Change password
+            </button>
+          </div>
+
+          <div class="settings_section_devider"></div>
+
+          <div class="settings_section">
+            <div class="settings_section_title">Способ тарификации</div>
+            <div class="popup_frames">
+              <label class="radio">
+                <span class="radio-in">
+                  <input
+                    type="radio"
+                    name="type"
+                    value="Type 1"
+                    class="radio-input"
+                  />
+                  <span class="radio-fake"> </span>
+                </span>
+                <p class="radio-text">
+                  Cтатичный<br /><span class="settings_radio-hint"
+                    >Лучше подходит тогда-то</span
+                  >
+                </p>
+              </label>
+              <label class="radio">
+                <span class="radio-in">
+                  <input
+                    type="radio"
+                    name="type"
+                    value="Type 2"
+                    class="radio-input"
+                    checked
+                  />
+                  <span class="radio-fake"></span>
+                </span>
+                <p class="radio-text">
+                  Динамический<br /><span class="settings_radio-hint"
+                    >Лучше подходит тогда-то</span
+                  >
+                </p>
+              </label>
+            </div>
+
+            <div class="settings_section_devider"></div>
+
+            <div class="settings_section">
+              <div class="settings_section_title">Соцсети</div>
+              <div class="settings_section_text">
+                Добавьте аккаунты соцсетей и сможете авторизовываться через них
+              </div>
+
+              <div class="settings_social">
+                <div class="settings_social_logo">
+                  <img src="./images/logo_fb.png" />
+                </div>
+                <button class="button_solid">Add Facebook Account</button>
+              </div>
+
+              <div class="settings_social">
+                <div class="settings_social_logo">
+                  <img src="./images/logo_git.png" />
+                </div>
+                <button class="button_solid">Add GitHub Account</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup email_change">
+      <button
+        type="button"
+        class="popup_close popup_close_x"
+        title="Close popup"
+        aria-label="Close popup"
+      ></button>
+      <div class="popup_title">New email</div>
+
+      <input type="text" class="input popup_input_100" value="mail@mail.com" />
+      <div class="popup_hint">
+        Мы отправим вам письмо для подтверждения нового почтового адреса
+      </div>
+
+      <div class="popup_buttons">
+        <button class="button_text popup_close">CANCEL</button>
+        <button class="button_solid button_solid_start">Change email</button>
+      </div>
+    </div>
+
+    <div class="popup password_change">
+      <button
+        type="button"
+        class="popup_close popup_close_x"
+        title="Close popup"
+        aria-label="Close popup"
+      ></button>
+      <div class="popup_title">New password</div>
+
+      <label class="contact_textfield textfield_100">
+        <span class="contact_textfield-title">Current password</span>
+        <input type="password" class="input contact_textfield-input" />
+      </label>
+
+      <label class="contact_textfield textfield_100">
+        <span class="contact_textfield-title">New password</span>
+        <input type="password" class="input contact_textfield-input" />
+      </label>
+
+      <label class="contact_textfield textfield_100">
+        <span class="contact_textfield-title">Confirm new password</span>
+        <input type="password" class="input contact_textfield-input" />
+      </label>
+
+      <div class="popup_buttons">
+        <button class="button_text popup_close">CANCEL</button>
+        <button class="button_solid button_solid_start">Change password</button>
+      </div>
+    </div>
+
+    <div class="popup_background"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
