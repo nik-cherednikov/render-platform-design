@@ -9,7 +9,7 @@
 
   <body>
     <div class="body_wrapper">
-      <include src="./blocks/header.html"></include>
+      <include src="./blocks/header.html"></include>.
 
       <div class="content_wrapper">
         <div class="page_header">
@@ -41,8 +41,14 @@
             <div class="task_center">
               <div class="task_status inprogress">In progress</div>
               <div class="task_circle">
+                <svg class="progress_draw" width="100" height="100" viewBox="0 0 100 100">
+                  <circle class="progress__meter" cx="50" cy="50" r="46" stroke-width="8" />
+                  <circle class="progress__value" cx="50" cy="50" r="46" stroke-width="8" />
+                </svg>
                 <div class="task_circle_percent">10%</div>
               </div>
+                
+
               <div class="task_frames_eta">
                 <div class="task_fe">10/139 frames</div>
                 <div class="task_fe">ETA: 14h, 11m</div>
@@ -73,11 +79,17 @@
             <div class="task_center">
               <div class="task_status inprogress">In progress</div>
               <div class="task_circle">
+                <svg class="progress_draw" width="100" height="100" viewBox="0 0 100 100">
+                  <circle class="progress__meter" cx="50" cy="50" r="46" stroke-width="8" />
+                  <circle class="progress__value" cx="50" cy="50" r="46" stroke-width="8" />
+                </svg>
                 <div class="task_circle_percent">10%</div>
               </div>
+                
+
               <div class="task_frames_eta">
-                <div class="task_fe">10/13900 frames</div>
-                <div class="task_fe">ETA: 104h, 11m</div>
+                <div class="task_fe">10/139 frames</div>
+                <div class="task_fe">ETA: 14h, 11m</div>
               </div>
             </div>
 
@@ -104,14 +116,14 @@
 
             <div class="task_center">
               <div class="task_status inprogress">In progress</div>
-              <div class="demo">
-                <svg class="progress_draw" width="120" height="120" viewBox="0 0 120 120">
-                  <circle class="progress__meter" cx="60" cy="60" r="54" stroke-width="12" />
-                  <circle class="progress__value" cx="60" cy="60" r="54" stroke-width="12" />
+              <div class="task_circle">
+                <svg class="progress_draw" width="100" height="100" viewBox="0 0 100 100">
+                  <circle class="progress__meter" cx="50" cy="50" r="46" stroke-width="8" />
+                  <circle class="progress__value" cx="50" cy="50" r="46" stroke-width="8" />
                 </svg>
-                <input id="control" type="range" value="60" />
-              </div>
                 <div class="task_circle_percent">10%</div>
+              </div>
+                
 
               <div class="task_frames_eta">
                 <div class="task_fe">10/139 frames</div>
@@ -126,6 +138,10 @@
         </div>
       </div>
     </a>
+
+
+
+
 
     <div class="popup popup_newtask">
       <button
@@ -245,4 +261,5 @@
     <div class="popup_background"></div>
     <script src="./index.js"></script>
   </body>
+  
 </html>

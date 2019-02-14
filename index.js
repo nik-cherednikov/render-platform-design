@@ -5,7 +5,7 @@ popupControl.init();
 var control = document.getElementById("control");
 var progressValue = document.querySelector(".progress__value");
 
-var RADIUS = 54;
+var RADIUS = 46;
 var CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
 function progress(value) {

@@ -333,18 +333,8 @@ th {
 .inprogress {
   background-image: url("/images/pause.svg");
 }
-.task_circle {
-  margin: 0 1rem;
-  width: 6.25rem;
-  height: 6.25rem;
-  border-radius: 100%;
-  background-color: #e5effd;
-}
-.task_circle_percent {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 2.25rem;
-}
+
+
 .task_frames_eta {
 }
 .task_fe {
@@ -1405,16 +1395,6 @@ M E D I A 2
     display: block;
   }
 
-  .task_circle {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .task_circle_percent {
-    font-size: 1.125rem;
-    text-align: center;
-    margin-top: 1.3rem;
-  }
 
   .task_title {
     font-size: 1rem;
@@ -1436,6 +1416,8 @@ M E D I A 2
   }
 }
 
+/*   P  R  O  G  R  E  S  S   */
+
 @media screen and (max-width: 320px) {
   .content_side {
     padding: 1rem;
@@ -1448,12 +1430,22 @@ M E D I A 2
   }
 }
 
-.demo {
-  flex-direction: column;
 
-  :first-child {
-    margin-bottom: 20px;
+.task_circle{
+  position:relative;
+  height: 6.25rem;
+  width: 6.25rem;
+  margin: 0 1rem;
+  & svg{
+    position:absolute;
   }
+}
+
+
+.task_circle_percent {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2.25rem;
 }
 
 .progress_draw {
@@ -1466,10 +1458,10 @@ M E D I A 2
 }
 
 .progress__meter {
-  stroke: #e6e6e6;
+  stroke: #E5EFFD;
 }
 
 .progress__value {
-  stroke: #f77a52;
+  stroke: #0064EB;
   stroke-linecap: round;
 }
